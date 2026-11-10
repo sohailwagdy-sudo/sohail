@@ -61,7 +61,7 @@
 </div>
 <div id="modal"><h2 id="mt"></h2><img id="mi"><p id="mm" style="color:#ffcc00;text-align:center;padding:0 10px"></p><button onclick="document.getElementById('modal').classList.remove('open')" style="padding:12px 28px;border-radius:20px;border:0;font-weight:bold">اغلاق</button></div>
 <script>
-  const SHEET_URL = "https://script.google.com/macros/s/AKfycbzgcsq5ugYiDDw6H_eCBZ0Y7sEWKyXFtsvJgSAmyfBnxSAoNFxlfd7ScN6K07kfhgYy/exec";
+  const SHEET_URL = "https://script.google.com/macros/s/AKfycbxre78wd3gp-7DCA4pPeLjXwpggD-j5GBCTZFq7PBnijoSAs1dUfRWD8esUaXSqdj0-/exec";
 function pushToSheet(type, list){
   try{ fetch(SHEET_URL,{method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain'}, body: JSON.stringify({type:type, list:list})}); }catch(e){}
 }
